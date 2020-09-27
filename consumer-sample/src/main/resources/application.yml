@@ -15,7 +15,9 @@ nacos:
 dubbo:
   registry:
     address: nacos://${nacos.host}:${nacos.port}/?username=${nacos.username}&password=${nacos.password}
+    parameters:
+      namespace: 20afacd5-82ce-405d-9072-5726350a288e
   application:
-    name: "consumer"
+    name: consumer
   protocol:
     port: 20899
